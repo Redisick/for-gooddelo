@@ -1,0 +1,41 @@
+@use "../abstracts/" as *;
+
+.info {
+    position: relative;
+    height: max-content;
+    padding-top: 15rem;
+    background: $gradient-3;
+
+    padding-bottom: 3rem;
+
+    &__title {
+        margin-bottom: 0.5rem;
+        letter-spacing: 5px;
+    }
+
+    & .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    @media (min-width: $medium){
+        padding-top: 10rem;
+        padding-bottom: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &__title {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.layer--transition {
+    background-image: url(/layer-1.png);
+    transform: rotate(180deg);
+    height: 100%;
+    top: 0;
+    bottom: auto;
+}

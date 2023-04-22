@@ -1,0 +1,31 @@
+@use "../abstracts/" as *;
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+    @media (min-width: $medium){ 
+        margin-bottom: 2rem;
+        flex-direction: row;
+        justify-content: space-evenly;
+        
+    }   
+}
+
+.card {
+    max-width: 500px;
+    background: $gradient-4;
+    border: 1px rgba(255, 255, 255, 0.3) solid;
+    border-radius: 10px;
+    padding: 1rem;
+
+    &__title {
+        margin-bottom: 0.5rem;
+    }
+
+    @media (min-width: $medium){ 
+        width: 33%;
+    }
+}

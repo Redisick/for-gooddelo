@@ -1,0 +1,53 @@
+@use '../abstracts/' as *;
+
+$fs-h1: 2rem;
+$fs-h2: 1.75rem;
+$fs-h3: 1.25rem;
+$fs-body: 1rem;
+
+$fs-h1-m: 4rem;
+$fs-h2-m: 2rem;
+$fs-h3-m: 1.5rem;
+$fs-body-m: 1.25rem;
+
+body {
+    font-family: $ff;
+    font-weight: $fw-reg;
+    line-height: 1.5;
+    font-size: $fs-body;
+    color: $dark;
+}
+
+h1 {
+    font-size: $fs-h1;
+    line-height: 1;
+}
+h2 {
+    font-size: $fs-h2;
+}
+h3 {
+    font-size: $fs-h3;
+}
+
+.logo {
+    text-align: center;
+    &__title {
+        letter-spacing: 3px;
+    }
+}
+
+@media (min-width: $medium) {
+    body {
+        font-size: $fs-body-m;
+    }
+    
+    h1 {
+        font-size: $fs-h1-m;
+    }
+    h2 {
+        font-size: $fs-h2-m;
+    }
+    h3 {
+        font-size: $fs-h3-m;
+    }
+}

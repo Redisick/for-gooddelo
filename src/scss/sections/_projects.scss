@@ -1,0 +1,11 @@
+@use '../abstracts/' as *;
+
+.projects {
+    background: $light;
+    padding-bottom: 2.5rem;
+
+    &__title {
+        font-weight: $fw-reg;
+        text-align: center;
+    }
+}

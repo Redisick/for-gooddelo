@@ -1,0 +1,38 @@
+@use "../abstracts/" as *;
+@use "./typography" as *;
+
+.button {
+    background: $gradient-2;
+    color: $lightest;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-family: $ff;
+    font-size: $fs-body-m;
+
+    height: 60px;
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+        background-color: rgba(255, 255, 255, 0.3);
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        opacity: 0;
+        transition: opacity 250ms ease;
+    }
+
+    &:hover::before {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,36 @@
+@use '../abstracts/' as *;
+
+.footer {
+    background-color: $dark;
+    color: $lightest;
+    padding: 2rem;
+
+    & .wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    &__list {
+        width: 50%;
+    }
+
+    &__item {
+        margin-bottom: 0.5rem;
+    }
+    &__item:last-of-type {
+        margin-bottom: 0;
+    }
+
+    & .name {
+        color: $mid;
+        transition: color 250ms ease;
+        &:hover {
+            color: $lightest;
+        }
+    }
+
+    @media(min-width: $medium){
+        padding: 3rem 2rem;
+    }
+}

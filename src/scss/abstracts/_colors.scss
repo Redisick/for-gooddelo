@@ -1,0 +1,13 @@
+$lightest: white;
+$light: rgb(218, 225, 230);
+$mid: rgb(124, 163, 184);
+$dark: rgb(17, 47, 63);
+
+$gradient-1: linear-gradient(180deg, rgba(93, 124, 139, 0.9), rgba(78, 119, 141, 0));
+$gradient-2: linear-gradient(-30deg, rgba(51, 93, 116, 0.9), rgba(102, 140, 160, 0.7));
+$gradient-3: linear-gradient(180deg, rgba(167, 202, 221, 1), $light);
+$gradient-4: linear-gradient(-30deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.8));
+$gradient-5: linear-gradient(180deg, $light, white);
+
+$bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.1),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.1);
